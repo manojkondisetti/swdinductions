@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>SWD Nucleus</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<div class="jumbotron">
+	  <img src="images/logo.png" alt="bits logo" width="100px" style="position: absolute; left: 1000px; top: 25px">
+		<h2>SWD Nucleus</h2>
+	</div>
+	    <!---Hamburger---->
+                <div class="navheader">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+	<!----------tabs------>
+	<div action="process.php" method="POST">
+		<div class="jumbotron col-xs-offset-3" style="width: 500px; height: 500px;">
+           <div class="row">
+			   <div class="nav nav-tabs" role="tablists">
+			       <ul class="nav nav-tabs" role="tablist">
+				       <li class="active"><a role="tab" data-toggle="tab" href="#login">Login</a></li>
+				       <li><a role="tab" data-toggle="tab" href="#signup">Signup</a></li><hr/>
+				   </ul>
+		        </div>
+           </div>
+				<!----------content-------->
+		<div class="tab-content" method="POST">
+			<div class="active tab-pane fade in" id="login">
+		         <fieldset class="active col-xs-offset-1">
+						  <form><hr/>
+			               USERNAME:
+							  <input type="text"  required="required" id="name" name="username"></br>
+			               PASSWORD:
+			               <input type="password" required="required" id="password" name="username"></br><hr/>
+			               <input type="radio" value="BITS Pilani Pilani Campus" name="gender"> BITS Pilani Pilani Campus</input></br>
+			               <input type="radio" value="BITS Pilani Goa Campus" name="gender"> BITS Pilani Goa Campus</input></br>
+			               <input type="radio" value="BITS Pilani Hyderabad Campus" name="gender"> BITS Pilani Hyderabad Campus</input></br>
+			               <input type="submit" value="Submit" ></input>
+                           <input type="reset" value="Reset"></input>
+						   </form>
+		         </fieldset>
+			</div>	 
+		    <div class="passive tab-pane fade in" id="signup">
+		           <fieldset class="passive col-xs-offset-1"><hr/>
+			            <form> 
+                           USERNAME:
+			               <input type="text"  required="required" id="name" name="username" ></br>
+			                ID NUMBER:
+			               <input type="text" required="required" id="idnumber" name="idnumber"></br>
+			 
+				               <input type="radio" value="Male" name="gender">Male</input>
+		                       <input type="radio" value="Female" name="gender">Female</input><hr/>
+		              
+			               <input type="radio" value="BITS Pilani Pilani Campus" name="campus"> BITS Pilani Pilani Campus</input></br>
+			               <input type="radio" value="BITS Pilani Goa Campus" name="campus"> BITS Pilani Goa Campus</input></br>
+			               <input type="radio" value="BITS Pilani Hyderabad Campus" name="campus"> BITS Pilani Hyderabad Campus</input></br><hr/>
+			               PASSWORD:
+			               <input type="password" required="required" id="password" name="username"></br>
+			               CONFIRM PASSWORD:
+			               <input type="password" required="required" id="password" name="username"></br>
+			               <input type="submit" value="Submit"></input>                            
+                           <input type="reset" value="Reset"></input>
+			            </form>
+		          </fieldset>
+		   </div>
+	  </div>
+	  <!---------endcontent------------>
+   </div>
+</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<fieldset>
+                
